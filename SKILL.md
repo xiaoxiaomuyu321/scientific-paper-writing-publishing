@@ -1,6 +1,8 @@
 ---
 name: scientific-paper-writing-publishing
 description: Use when planning, drafting, translating, revising, auditing, submitting, or responding to peer review for an English scientific journal article, thesis, or dissertation; for Chicago-style citation (notes-bibliography or author-date) and student writing style; or when journal or university instructions, reporting guidelines, publication ethics, or source-grounded claims must be reconciled. Bundles a searchable dataset of two canonical guides — Gastel & Day for journal papers and Turabian for the research process, citation, and thesis/dissertation format.
+metadata:
+  short-description: "Journal/thesis writing and publishing with book-verified craft"
 ---
 
 # Scientific Paper Writing and Publishing

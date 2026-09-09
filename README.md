@@ -34,10 +34,43 @@ python scripts/paper_kb.py check                                    # 提取伪�
 - `--source` 接受书名子串或 URN，用于避免两本书的建议互相混淆。
 - 每条结果带 `title`（书名）、`path`（URN）、`locator`（章节 + 页码），请保留在笔记中以保可溯源。
 
-### 安装为 Agent 技能
+### 直接安装（Codex / DeepSeek Harness）
 
-把本目录整体复制到 Agent 技能目录（如 `~/.claude/skills/`、`~/.agents/skills/`）。
-入口为 `SKILL.md`；路由、工作流与证据纪律见该文件及其引用的 `references/` 文档。
+本仓库即标准 Agent 技能包（根目录 `SKILL.md`），支持两种宿主，一行安装、无需 clone：
+
+| 宿主 | 安装位置 | 生效时机 |
+|---|---|---|
+| OpenAI Codex | `%USERPROFILE%\.codex\skills\scientific-paper-writing-publishing`（可用 `$env:CODEX_HOME` 改） | 下一轮对话 |
+| DeepSeek Harness (DSH) | `%USERPROFILE%\.agents\skills\scientific-paper-writing-publishing` | 技能目录刷新后（新会话自动可见） |
+
+Windows (PowerShell)：
+
+```powershell
+# 安装到两个宿主
+irm https://raw.githubusercontent.com/xiaoxiaomuyu321/scientific-paper-writing-publishing/main/install.ps1 | iex
+
+# 只装 Codex
+$env:SKILL_INSTALL_TARGET = 'codex'
+irm https://raw.githubusercontent.com/xiaoxiaomuyu321/scientific-paper-writing-publishing/main/install.ps1 | iex
+
+# 卸载（两个宿主；设 $env:SKILL_INSTALL_TARGET='dsh' 只卸一个）
+$env:SKILL_UNINSTALL = '1'
+irm https://raw.githubusercontent.com/xiaoxiaomuyu321/scientific-paper-writing-publishing/main/install.ps1 | iex
+```
+
+macOS / Linux：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/xiaoxiaomuyu321/scientific-paper-writing-publishing/main/install.sh | bash              # 两个宿主
+curl -fsSL https://raw.githubusercontent.com/xiaoxiaomuyu321/scientific-paper-writing-publishing/main/install.sh | bash -s -- codex  # 只装 Codex
+curl -fsSL https://raw.githubusercontent.com/xiaoxiaomuyu321/scientific-paper-writing-publishing/main/install.sh | bash -s -- all --uninstall
+```
+
+- 重复执行 = 更新：git 安装走 `git pull --ff-only`；普通目录安装自动备份（`<目录>.bak-<时间戳>`）后替换。
+- 也可以手动：`git clone https://github.com/xiaoxiaomuyu321/scientific-paper-writing-publishing <技能目录>\scientific-paper-writing-publishing`；
+  Codex 里还可以直接对内置 `skill-installer` 说 “install skill from github xiaoxiaomuyu321/scientific-paper-writing-publishing”。
+- 旧方式仍有效：把本目录整体复制到任意 Agent 技能目录（如 `~/.claude/skills/`）。
+  入口为 `SKILL.md`；路由、工作流与证据纪律见该文件及其引用的 `references/` 文档。
 
 ## 目录结构
 
