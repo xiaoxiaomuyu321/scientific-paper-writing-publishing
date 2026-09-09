@@ -1,0 +1,46 @@
+# Private-Use License
+
+This repository is distributed for **private, non-commercial use only**.
+It is deliberately NOT released under an open-source license.
+
+## 1. Book text (third-party copyrighted works)
+
+`references/book-knowledge.sqlite` contains the full extracted text of two
+commercial books, reproduced there only for personal research assistance:
+
+1. Barbara Gastel and Robert A. Day, *How to Write and Publish a Scientific
+   Paper*, 8th edition (Cambridge University Press, 2016),
+   ISBN 978-1-316-64043-2, DOI 10.1017/9781108105293
+   (`urn:isbn:9781316640432`).
+2. Kate L. Turabian, *A Manual for Writers of Research Papers, Theses, and
+   Dissertations: Chicago Style for Students and Researchers*, 7th edition
+   (University of Chicago Press, 2003; 2007 paperback printing),
+   ISBN 978-0-226-82337-9 (`urn:isbn:9780226823379`).
+
+All rights in those books remain with their respective copyright holders.
+Nothing in this repository transfers any right in them. Use of the extracted
+text is limited to:
+
+- private, non-commercial study, writing assistance, and research;
+- querying, paraphrasing, and citation of the books' *advice* as an aid to
+  your own writing;
+- rebuilding the index on your own machine from legally obtained copies of
+  the books.
+
+You may not publish, redistribute, sublicense, sell, or otherwise make
+available the book text, the SQLite database, or derivative extracts of it,
+in whole or in part, to any third party, in any medium.
+
+## 2. Original content
+
+The skill documentation, workflows, and scripts in this repository
+(`SKILL.md`, the `references/*.md` craft and policy documents, `scripts/*.py`,
+`assets/`) were created for this skill. They are provided under the same
+private-use terms: you may use them privately and adapt them for your own
+work; you may not redistribute them.
+
+## 3. No warranty
+
+THE REPOSITORY IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. THE AUTHORS DISCLAIM ALL LIABILITY FOR ANY DAMAGES ARISING FROM THE
+USE OF THIS REPOSITORY.

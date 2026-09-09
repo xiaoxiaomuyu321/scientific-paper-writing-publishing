@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Paper Writing and Publishing"
+  short_description: "Write, cite, and publish rigorous English papers, theses, and dissertations"
+  default_prompt: "Use $scientific-paper-writing-publishing to help me plan, draft, audit, submit, or revise an English scientific paper, thesis, or dissertation, including Chicago-style citation."
