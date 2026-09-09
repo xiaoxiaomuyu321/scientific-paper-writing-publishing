@@ -6,8 +6,9 @@ Turabian（研究过程、芝加哥引用、学位论文格式）的**完整校�
 
 写作工艺以书为准：技能中的每条建议都可溯源到书中的具体章节（命中的书名 + 章节 locator）。
 
-> 私有用途技能：知识库嵌入两本商业书籍的完整提取文本，请勿公开分发
-> （见仓库根目录 [LICENSE](LICENSE) 与 [THIRD-PARTY-NOTICE.md](THIRD-PARTY-NOTICE.md)）。
+> 使用说明：知识库嵌入了两本商业书籍的完整提取文本，仅限个人、非商业使用；
+> 请勿再分发书籍文本或 `book-knowledge.sqlite`
+> （条款见仓库根目录 [LICENSE](LICENSE) 与 [THIRD-PARTY-NOTICE.md](THIRD-PARTY-NOTICE.md)）。
 
 ## 内置书籍
 
