@@ -1,7 +1,8 @@
 # Private-Use License
 
-This repository is distributed for **private, non-commercial use only**.
-It is deliberately NOT released under an open-source license.
+This repository is hosted publicly for the repository owner's personal use and
+is licensed for **private, non-commercial use only**. It is deliberately NOT
+released under an open-source license.
 
 ## 1. Book text (third-party copyrighted works)
 
@@ -29,7 +30,9 @@ text is limited to:
 
 You may not publish, redistribute, sublicense, sell, or otherwise make
 available the book text, the SQLite database, or derivative extracts of it,
-in whole or in part, to any third party, in any medium.
+in whole or in part, to any third party, in any medium. The public
+availability of this repository does not constitute a license, transfer, or
+waiver of any right in the book text.
 
 ## 2. Original content
 
